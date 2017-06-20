@@ -22,9 +22,9 @@
 ##############################################################################
 import json
 from datetime import datetime, date
-from openerp.addons.web import http
-from openerp import SUPERUSER_ID
-from openerp.addons.web.http import request
+from odoo.addons.web import http
+from odoo import SUPERUSER_ID
+from odoo.addons.web.http import request
 
 
 class SalonBookingWeb(http.Controller):
