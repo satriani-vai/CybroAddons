@@ -1,3 +1,22 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Gist
+ @satriani-vai
+ Sign out
+ Watch 3
+  Unstar 11
+  Fork 33 CybroOdoo/CybroAddons
+ Code  Issues 2  Pull requests 6  Projects 0  Wiki Insights 
+Branch: 9.0 Find file Copy pathCybroAddons/salon_management/models/salon_management.py
+bdf8760  on 11 May
+@NilmarShereefPT NilmarShereefPT [CHNG]Public User Issue Fixed
+1 contributor
+RawBlameHistory    
+420 lines (369 sloc)  18.7 KB
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
@@ -21,9 +40,9 @@
 #
 ##############################################################################
 from datetime import date, datetime, timedelta
-from openerp import models, fields, api
-from openerp.tools.translate import _
-from openerp.exceptions import UserError, ValidationError
+from odoo import models, fields, api
+from odoo.tools.translate import _
+from odoo.exceptions import UserError, ValidationError
 
 
 class PartnerSalon(models.Model):
@@ -417,3 +436,5 @@ class SalonStages(models.Model):
     _name = 'salon.stages'
 
     name = fields.Char(string="Name", translate=True, required=True)
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
